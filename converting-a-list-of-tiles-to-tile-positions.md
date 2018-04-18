@@ -27,7 +27,8 @@ separately._
 ## Zero-base vs one-base
 
 Note that it's important to use a _zero-based position_ for elements in the flat
-list. Otherwise, this throws off your Y coordinates as the top-left corner
-because `(0,1)`.
+list. Otherwise, this throws off your coordinates because the top-left corner
+becomes `(1, 0)` and your Y values increment at the end of the row rather than
+at the beginning.
 
 ![1-based tile list conversion](images/one-based-map-tiles.png)
